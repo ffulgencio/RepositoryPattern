@@ -41,17 +41,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Contexto\TareaContexto.cs" />
+    <Compile Include="Core\Interfaces\ICategoriaRepository.cs" />
+    <Compile Include="Core\Interfaces\IRepository.cs" />
     <Compile Include="Entities\Categoria.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\DetalleFactura.cs" />
     <Compile Include="Entities\Factura.cs" />
     <Compile Include="Entities\Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\CategoriaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contexto\" />
-    <Folder Include="Core\" />
-    <Folder Include="Repositorios\" />
     <Folder Include="servicios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
