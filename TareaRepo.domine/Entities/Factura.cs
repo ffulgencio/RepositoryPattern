@@ -5,6 +5,11 @@ namespace TareaRepo.domine.Entities
 {
     public class Factura
     {
+        public Factura()
+        {
+            DetalleFacturas = new HashSet<DetalleFactura>();
+        }
+
         public int Id { get; set; }
         public string NCF { get; set; }
         public int ClienteId { get; set; }

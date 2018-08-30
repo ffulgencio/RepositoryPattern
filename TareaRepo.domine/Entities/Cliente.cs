@@ -8,6 +8,11 @@ namespace TareaRepo.domine.Entities
 {
     public class Cliente
     {
+        public Cliente()
+        {
+            Facturas = new HashSet<Factura>();
+        }
+
         public int Id { get; set; }
         public string Nombres { get; set; }
         public string Apellido { get; set; }
